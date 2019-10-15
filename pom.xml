@@ -20,7 +20,7 @@
 	  <module>building-customers-service</module>
 	  <module>building-vets-service</module>
 	  <module>building-visits-service</module> -->
-	  <!-- <module>building-config-server</module> -->
+	  <module>building-config-server</module>
 	  <!-- <module>building-discovery-server</module>
 	  <module>building-api-gateway</module>
 	  <module>building-hystrix-dashboard</module> -->
@@ -30,8 +30,8 @@
 		<java.version>1.8</java.version>
 		<assertj.version>3.11.1</assertj.version>
 
-    <spring-boot.version>2.1.2.RELEASE</spring-boot.version>
-    <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+    <spring-boot.version>2.1.9.RELEASE</spring-boot.version>
+    <spring-cloud.version>Greenwich.SR2</spring-cloud.version>
 
     <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
 		<docker.image.prefix>building</docker.image.prefix>
