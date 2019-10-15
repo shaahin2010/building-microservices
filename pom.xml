@@ -20,7 +20,7 @@
 	  <module>building-customers-service</module>
 	  <module>building-vets-service</module>
 	  <module>building-visits-service</module> -->
-	  <module>building-config-server</module>
+	  <!-- <module>building-config-server</module> -->
 	  <!-- <module>building-discovery-server</module>
 	  <module>building-api-gateway</module>
 	  <module>building-hystrix-dashboard</module> -->
@@ -28,6 +28,12 @@
 
 	<properties>
 		<java.version>1.8</java.version>
+		<assertj.version>3.11.1</assertj.version>
+
+    <spring-boot.version>2.1.2.RELEASE</spring-boot.version>
+    <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+
+    <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
 		<docker.image.prefix>building</docker.image.prefix>
     <docker.image.exposed.port>9090</docker.image.exposed.port>
     <docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>
@@ -40,7 +46,7 @@
 	            <dependency>
 	                <groupId>org.springframework.cloud</groupId>
 	                <artifactId>spring-cloud-dependencies</artifactId>
-	                <!-- <version>${spring-cloud.version}</version> -->
+	                <version>${spring-cloud.version}</version>
 	                <type>pom</type>
 	                <scope>import</scope>
 	            </dependency>
@@ -59,7 +65,7 @@
 	            <dependency>
 	                <groupId>org.assertj</groupId>
 	                <artifactId>assertj-core</artifactId>
-	                <!-- <version>${assertj.version}</version> -->
+	                <version>${assertj.version}</version>
 	                <scope>test</scope>
 	            </dependency>
 
