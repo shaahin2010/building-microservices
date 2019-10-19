@@ -20,7 +20,8 @@
 		<!-- <module>building-admin-server</module> <module>building-customers-service</module> 
 			<module>building-vets-service</module> <module>building-visits-service</module> -->
 		<module>building-config-server</module>
-		<!-- <module>building-discovery-server</module> <module>building-api-gateway</module> 
+		<module>building-discovery-server</module>
+		<!-- <module>building-api-gateway</module> 
 			<module>building-hystrix-dashboard</module> -->
 	</modules>
 
