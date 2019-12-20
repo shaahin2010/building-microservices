@@ -19,7 +19,7 @@
 	<modules>
 		<module>building-admin-server</module>
 		<!-- <module>building-customers-service</module> -->
-		<!-- <module>building-vets-service</module> <module>building-visits-service</module> -->
+		<module>building-info</module>
 		<module>building-config-server</module>
 		<module>building-discovery-server</module>
 		<!-- <module>building-api-gateway</module> <module>building-hystrix-dashboard</module> -->
@@ -36,6 +36,9 @@
 		<docker.image.dockerfile.dir>${basedir}</docker.image.dockerfile.dir>
 		<docker.image.dockerize.version>v0.6.1</docker.image.dockerize.version>
 		<docker.plugin.version>1.2.0</docker.plugin.version>
+		
+		<dockerfile.build.pullNewerImage>false</dockerfile.build.pullNewerImage>
+		<dockerfile.build.noCache>false</dockerfile.build.noCache>
 	</properties>
 
 	<dependencyManagement>

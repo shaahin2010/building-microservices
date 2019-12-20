@@ -4,7 +4,7 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/shaahin2010/building-config
+          uri: https://github.com/shaahin2010/building-microservices-config
 ---
 spring:
   profiles: local
