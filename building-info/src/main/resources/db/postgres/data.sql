@@ -1,0 +1,1 @@
+INSERT INTO public.bms_building (id, address, building_code, building_name, building_no, total_flats) VALUES (1, '2nd East, Fakouri St.', 'myhome', '', '13', 8);
