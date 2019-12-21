@@ -6,8 +6,9 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import com.gmail.shaahin2010.building.infoservice.buildinginfo.model.base.BaseEntity;
+import com.gmail.shaahin2010.building.infoservice.buildinginfo.model.base.TimestampableBaseEntity;
 
+import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -15,11 +16,11 @@ import lombok.EqualsAndHashCode;
 @Entity
 @Table(name = "bms_unit")
 @EqualsAndHashCode(callSuper = false)
-public class Unit extends BaseEntity<Long> {
+@AllArgsConstructor(staticName = "of")
+public class Unit extends TimestampableBaseEntity<Long> {
 	private String unitNo;
 	private Double area;
 	@JoinColumn(nullable = false)
 	@ManyToOne(fetch = FetchType.LAZY)
 	private Building building;
-
 }
