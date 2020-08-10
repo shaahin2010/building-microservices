@@ -7,7 +7,6 @@
 		<groupId>com.gmail.shaahin2010</groupId>
 		<artifactId>building-microservices</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
-		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<artifactId>building-config-server</artifactId>
 	<name>building-config-server</name>
