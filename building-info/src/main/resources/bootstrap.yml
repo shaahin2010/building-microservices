@@ -3,7 +3,7 @@ spring:
     name: info-service
 
 server:
-  port: 7070
+  port: 6666
   
 eureka:
   client:
